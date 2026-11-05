@@ -6,14 +6,96 @@
     <title>Document</title>
     <style>
 
+        *{
+            box-sizing: border-box;
+            
+        }
+
+        body{
+            margin: 0;
+        }
 
 
+        .layout{
+            display: flex;
+        }
 
+        #sidebar{
+            width: 25%;
+            background-color: rgb(1, 58, 143);
+            color: whitesmoke;
+            padding: 20px;
+            padding-bottom: 100px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #sidebar nav{
+            margin-bottom: 12px;
+        }
+
+        #sidebar a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        #sidebar a:hover{
+            color: rgb(156, 156, 156);
+        }
+
+        .main-content{
+            width: 75%;
+            padding: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .main-content h1{
+            color: rgb(0, 0, 109);
+        }
+
+        .main-content p{
+            line-height: 20px;
+        }
+
+        footer{
+            text-align: center;
+            background-color: rgb(211, 211, 211);
+            padding: 14px;
+
+        }
+
+        footer a:active{
+            color: blueviolet;
+            font-style: italic;
+        }
 
     </style>
 </head>
 <body>
     
+    <div class="layout">
     
+    
+        <aside id="sidebar">
+
+        <h3>Menu</h3>
+        <nav><a href="">Profil</a></nav>
+        <nav><a href="">Proyek</a></nav>
+        <nav><a href="">Keahlian</a></nav>
+          <nav><a href="">Kontak</a></nav>
+    
+          </aside>
+        
+      <main class="main-content">
+
+        <h1>Profil saya</h1>
+        <p>Halo, kenalin nama saya Jovan Adhi Futanto, kelas 10 TKJ 1.</p>
+        <p>Sekarang, saya sedang belajar tentang HTML dan CSS.</p>
+        <p>Ini merupakan halaman terakhir saya.</p>
+
+    </main>
+    </div>
+
+<footer><a href="">Kembali ke Beranda</a></footer>
+
 </body>
 </html>
